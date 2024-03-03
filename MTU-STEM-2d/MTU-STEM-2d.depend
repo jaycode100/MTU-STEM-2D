@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1709412621 source:c:\users\work\documents\github\mtu-stem-2d\mtu-stem-2d\my_functions.cpp
+	<iostream>
+	<vector>
+	"shape.h"
+
+1709417351 source:c:\users\work\documents\github\mtu-stem-2d\mtu-stem-2d\main.cpp
+	<iostream>
+	<conio.h>
+	"my_func.h"
+
+1709404664 source:c:\users\work\documents\github\mtu-stem-2d\mtu-stem-2d\shapes.cpp
+
+1709411875 source:c:\users\work\documents\github\mtu-stem-2d\mtu-stem-2d\areacalculator\areashapes.cpp
+	<iostream>
+	<time.h>
+
+1709435639 source:c:\users\work\documents\github\mtu-stem-2d\mtu-stem-2d\distancecalculator.cpp
+	<iostream>
+	<math.h>
+	<cmath>
+	<conio.h>
+	"shapes.h"
+
+1709415437 c:\users\work\documents\github\mtu-stem-2d\mtu-stem-2d\shape.h
+
+1709434767 c:\users\work\documents\github\mtu-stem-2d\mtu-stem-2d\my_func.h
+
+1709435025 source:c:\users\work\documents\github\mtu-stem-2d\mtu-stem-2d\areashapes.cpp
+	<iostream>
+	<time.h>
+	"my_func.h"
+
+1709417251 source:c:\users\work\documents\github\mtu-stem-2d\mtu-stem-2d\areacalc.cpp
+	<iostream>
+	<cctype>
+	"shapes.h"
+
+1709431927 c:\users\work\documents\github\mtu-stem-2d\mtu-stem-2d\shapes.h
+
