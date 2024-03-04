@@ -1,24 +1,22 @@
 //All functions used within this program file are for evaluation of area
 //This function is integrated into main()!!!
 #include <iostream>
-#include <time.h>
 #include "my_func.h"
+#include "formattings.h"
+#include "shapes.h"
 
 using namespace std;
-
-float num_check(float);
-void waiting(unsigned int);
 
 //Classes to obtain the parameters used to getting the area
 void displayRectangle()
 {
-    ///BASE CLASS - to get the parameters for the Rectangle
+    ///Class - to get the parameters for the Rectangle
     class Shapes
     {
     public:
-        double length;
-        double breadth;
-        double getRectangleParam()   //Function to calculate the surface area of the RECTANGLE
+        double length = 0.0;
+        double breadth = 0.0;
+        double getRectangleParam()      //Function to calculate the surface area of the RECTANGLE
         {
             double area = 0.0;
             system("cls");
@@ -49,24 +47,22 @@ void displayRectangle()
 
     Shapes my_Rect;
     double answer = my_Rect.getRectangleParam();
-    cout << "The area is: " << answer << endl;
-    cout << "The length is: " << my_Rect.length << endl;
-    cout << "The breadth is: " << my_Rect.breadth << endl;
-    waiting(3000);
-    distanceCalc(my_Rect.length, my_Rect.breadth, 'O');
-
-    return;
+    cout << "\nThe area is: " << answer << endl;
+    cout << "\n\n[\tThe length is: " << my_Rect.length << endl;
+    cout << "\tThe breadth is: " << my_Rect.breadth << "\t]" << endl;
+    waiting(4000);
+    distanceCalc(my_Rect.length, my_Rect.breadth, 'R');
 }
 
 void displayTriangle()
 {
-    ///Derived Class - to get the parameters for the Triangle
-    class Triangle // : public Shapes
+    ///Class - to get the parameters for the Triangle
+    class Triangle
     {
     public:
-        double height;
-        double baselen;
-        double getTriangleParam()   //Function to calculate the surface area of the TRIANGLE
+        double height = 0.0;
+        double baselen = 0.0;
+        double getTriangleParam()       //Function to calculate the surface area of the TRIANGLE
         {
             double area = 0.0;
             char right_ang;
@@ -102,23 +98,21 @@ void displayTriangle()
 
     Triangle my_Tri;
     double answer = my_Tri.getTriangleParam();
-    cout << "The area is: " << answer << endl;
-    cout << "The length is: " << my_Tri.baselen << endl;
-    cout << "The breadth is: " << my_Tri.height << endl;
-    waiting(3000);
-    distanceCalc(my_Tri.baselen, my_Tri.height, 'N');
-
-    return;
+    cout << "\nThe area is: " << answer << endl;
+    cout << "\n\n[\tThe length is: " << my_Tri.baselen << endl;
+    cout << "\tThe breadth is: " << my_Tri.height << "\t]" << endl;
+    waiting(4000);
+    distanceCalc(my_Tri.baselen, my_Tri.height, 'T');
 }
 
 void displaySquare()
 {
-    ///Derived Class - to get the parameters for the Square
-    class Square // : public Shapes
+    ///Class - to get the parameters for the Square
+    class Square
     {
     public:
         double length = 0.0;
-        double getSquareParam()   //Function to calculate the surface area of the SQUARE
+        double getSquareParam()     //Function to calculate the surface area of the SQUARE
         {
             double area = 0.0;
             system("cls");
@@ -135,31 +129,8 @@ void displaySquare()
 
     Square my_Sq;
     double answer = my_Sq.getSquareParam();
-    cout << "The area is: " << answer << endl;
-    cout << "The length is: " << my_Sq.length << endl;
-    waiting(3000);
-    distanceCalc(my_Sq.length, 0.0, 'O');
-
-    return;
-}
-
-
-///Function to apply timing delay
-void waiting(unsigned int mseconds)
-{
-    clock_t goal = mseconds + clock();
-    while (goal > clock());
-}
-
-/// This is the function to forestall wrong input type expected
-float num_check(float v)
-{
-    while (v <= 0)
-    {
-        cout << "\nInput must be greater than zero.\nRe-enter: ";
-        cin >> v;
-        if (v > 0)
-            break;
-    }
-    return v;
+    cout << "\nThe area is: " << answer << endl;
+    cout << "\n\n[\tThe length is: " << my_Sq.length << "\t]" << endl;
+    waiting(4000);
+    distanceCalc(my_Sq.length, 0.0, 'S');
 }

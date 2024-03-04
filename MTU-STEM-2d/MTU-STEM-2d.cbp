@@ -34,7 +34,10 @@
 		<Unit filename="areaCalc.cpp" />
 		<Unit filename="areaShapes.cpp" />
 		<Unit filename="build.mk" />
+		<Unit filename="distance.cpp" />
 		<Unit filename="distanceCalculator.cpp" />
+		<Unit filename="formattings.cpp" />
+		<Unit filename="formattings.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="my_func.h" />
 		<Unit filename="shapes.h" />

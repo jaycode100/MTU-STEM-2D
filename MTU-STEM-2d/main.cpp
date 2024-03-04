@@ -5,14 +5,19 @@
 
 using namespace std;
 
-int main()
+main()
 {
     //All other functions are linked to this ONE
-    callAreaCalc();
+    char myChoice;
 
+    callAreaCalc();
     cout << "\n\nPress any key to continue...";
     getch();
-    cout << endl;
 
-    return 0;
+    cout << "\n\n\n\nDo you want to make use of our distance calculator? (Y/N)\n--> ";
+    cin >> myChoice;
+    if (myChoice == 'Y' || myChoice == 'y')
+        calculateDistance();
+
+    cout << "\nGOODBYE!!" << endl;
 }

@@ -6,6 +6,7 @@
 #include <iostream>
 #include <cctype>
 #include "shapes.h"
+#include "formattings.h"
 
 using namespace std;
 
@@ -17,7 +18,8 @@ void callAreaCalc()
     char select;
 
     system("cls");
-    cout << "This Program calculates the surface area of:\n" << " -Square\t -Rectangle\t -Triangle\n" << endl;
+    cout << "\n\nThis Program calculates the surface area of:\n" <<
+    " -Square\t -Rectangle\t -Triangle\n" << endl;
     cout << "Which of the objects above do you wish to calculate?\n" << endl;
     cout << "Enter\n's' \t for Square\n" <<
     "'r' \t for Rectangle\n" <<
